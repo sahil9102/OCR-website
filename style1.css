@@ -1,0 +1,264 @@
+/* Header */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+nav{
+    font-family: poppins;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: #242526;
+    top: 0;
+    left: 0;
+}
+
+nav .wrapper{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .logo a{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrapper .nav-links{
+    display: inline-flex;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover{
+    background: #3A3B3C;
+}
+
+@media screen and (max-width: 768px) {
+    nav .wrapper{
+        padding: 0px 10px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .wrapper .logo a{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .nav-links li a{
+        font-size: 13px;
+        font-weight: 300;
+        padding: 3px 5px;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Body Text */
+
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+p.body_text{
+    padding: 5% 50% 5% 10%;
+    font-size: 30px;
+    font-family: "century gothic"
+}
+
+.table_container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.responsive-table {
+    li {
+        padding: 60px 40px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        font-size: 30px;
+        font-family: "century gothic"
+    }
+    .table-row {
+        background-color: #ffffff;
+    }
+    img.data{
+        height: 350px;
+        width: auto;
+        box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+        border-radius: 20px;
+    }
+    div.col-1{
+        padding-right: 20%;
+    }
+    
+    @media screen and (max-width: 768px) {
+        li{
+            padding: 0;
+            font-size: small;
+        }
+        img.data{
+            display: none;
+        }
+        .col-1 {
+            flex-basis: 100%;
+            display: flex;
+            width: 70%;
+        }
+    }
+}
+
+.hiro{
+    margin-top: 80px;
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 9vw;
+}
+@media screen and (max-width:768px) {
+    .hiro{
+        font-size: medium;
+        font-weight: 700;
+    }
+}
+
+/*Our Process*/
+
+table.tprocess{
+    border: 2px dashed gray;
+    border-radius: 10px;
+}
+
+tr.table-row{
+    font-family: "century gothic";
+    font-size: 30px;
+}
+
+h2.row-head{
+    font-family: "poppins";
+    font-size: larger;
+    font-weight: 500;
+}
+td.table-data{
+    border-top: 2px dashed gray;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+td.table-image{
+    border-top: 2px dashed gray; 
+    border-left: 2px  dashed gray;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img.tbim{
+    margin: 20px;
+    width: 25vw;
+}
+
+td.thead{
+    border-top: none;
+}
+
+@media screen and (max-width: 768px) {
+    tr.table-row{
+        font-size: small;
+    }
+    h2.row-head{
+        font-size: medium;
+    }
+    td.table-data{
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    td.table-image{
+        padding-right: 10px;
+    }
+    img.tbim{
+        margin: 0px;
+    }
+}
+
+/*Footer*/
+
+footer {
+    bottom: 10px;
+    left: 35%;
+    position: fixed;
+    width: 30%;
+    right: 0;
+    word-spacing: 15px;
+    div.follow-ocr {
+        border-radius: 4px;
+		background: #323b40;
+		text-align: center;
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: inline;
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			border-bottom: 0px solid rgba(0,0,0,0.95);
+			border-radius: 4px;
+			display: inline-block;
+            height: 40px;
+			padding: 20px;
+			position: relative;
+			transition: .2s ease-in;
+            width: 30px;
+			svg {
+                left: 16px;
+                position: absolute;
+                top: 20px;
+				height: 40px;
+				width: 40px;
+                color: whitesmoke;
+			}
+		}
+		a:hover {
+			transform: translateY(-4px);
+            background-color: #42484a;
+            box-shadow: 0px 0px 2px whitesmoke;
+			svg {
+                color: #257cd4;
+				path, circle {
+					fill: whitesmoke;
+				}
+			}
+		}
+	}
+    @media screen and (max-width: 768px) { 
+        width: 100%;    
+        left: 0%;
+        bottom: 0px;
+        div.follow-ocr {
+            border-radius: 0px;
+        }
+    }
+}
+
