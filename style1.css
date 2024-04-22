@@ -111,7 +111,13 @@ p.body_text{
     div.col-1{
         padding-right: 20%;
     }
-    
+	
+	@media screen and (max-width: 1400px) {
+        img.data{
+            display: none;
+        }
+    }
+	
     @media screen and (max-width: 768px) {
         li{
             padding: 0;
