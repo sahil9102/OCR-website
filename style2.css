@@ -52,7 +52,7 @@ nav .wrapper{
     background: #3A3B3C;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
     nav .wrapper{
         padding: 0px 10px;
         height: 60px;
@@ -138,7 +138,7 @@ body {
     margin-left: 20px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 900px) {
     .responsive-block-Container {
         width: 75%;
     }
@@ -197,7 +197,7 @@ body {
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
     .service{
         p{
             box-shadow: none;
@@ -287,7 +287,7 @@ body {
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
     .team{
         p{
             box-shadow: none;
