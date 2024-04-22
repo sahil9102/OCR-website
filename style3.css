@@ -6,76 +6,73 @@
 
 nav{
     font-family: poppins;
-    position: fixed ;
-    z-index: 1 ;
-    width: 100% ;
-    background: #242526 ;
-    top: 0 ;
-    left: 0 ;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: #242526;
+    top: 0;
+    left: 0;
 }
 
 nav .wrapper{
     position: relative;
-    padding: 0px 30px ;
-    height: 70px ;
-    line-height: 70px ;
-    margin: auto ;
-    display: flex ;
-    align-items: center ;
-    justify-content: space-between ;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .wrapper .logo a{
-    color: #f2f2f2 ;
-    font-size: 30px ;
-    font-weight: 600 ;
-    text-decoration: none ;
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .wrapper .nav-links{
-    display: inline-flex ;
-}
-
-ul.nav-links{
-  margin-top: 15px;
+    display: inline-flex;
 }
 
 .nav-links li{
-    list-style: none ;
+    list-style: none;
 }
 
 .nav-links li a{
-    color: #f2f2f2 ;
-    text-decoration: none ;
-    font-size: 18px ;
-    font-weight: 500 ;
-    padding: 9px 15px ;
-    border-radius: 5px ;
-    transition: all 0.3s ease ;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .nav-links li a:hover{
-    background: #3A3B3C ;
+    background: #3A3B3C;
 }
 
-@media screen and (max-width: 1080px) {
-  nav .wrapper{
-    padding: 0px 10px ;
-    height: 60px;
-    line-height: 60px ;
-  }
+@media screen and (max-width: 768px) {
+    nav .wrapper{
+        padding: 0px 10px;
+        height: 60px;
+        line-height: 60px;
+    }
 
-  .wrapper .logo a{
-    font-size: 20px ;
-    font-weight: 400 ;
-  }
+    .wrapper .logo a{
+        font-size: 20px;
+        font-weight: 400;
+    }
 
-  .nav-links li a{
-    font-size: 13px ;
-    font-weight: 300 ;
-    padding: 3px 5px ;
-    transition: all 0.3s ease ;
-  }
+    .nav-links li a{
+        font-size: 13px;
+        font-weight: 300;
+        padding: 3px 5px;
+        transition: all 0.3s ease;
+    }
 }
 
 
@@ -90,10 +87,10 @@ svg{
 svg.email-sub {
   height: 22rem;
   margin-left: 12vw;
-  margin-top: 30vh;
+  margin-top: 225px;
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1180px){
   svg.email-sub{
     display: none;
     margin: 0px;
@@ -157,10 +154,9 @@ svg.email-sub {
 form {  
   width: 30vw;
   position: flex;
-  top: 20%;
   float: right;
   margin-right: 12vw;
-  margin-top: 15vh;
+  margin-top: 120px;
   text-align: center;
 
   .title {
@@ -221,13 +217,10 @@ form {
   }
 
   textarea{
-    padding-top: 5%;
-    padding-left: 7%;
-    padding-bottom: 5%;
-    padding-right: 7%;
+    padding: 1.5rem 2rem;
     resize: vertical;
     overflow-y: auto; 
-    width: 86%;
+    width: calc(100% - 4rem);
   }
 
   .btn{
@@ -253,14 +246,30 @@ form {
   }
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1180px) and (min-width: 600px){
   form{
     float:left;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 22%;
     width: 60%;
     .title{
+      font-size: 40px;
+    }
+    .btn{
       font-size: 20px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  form{
+    float:left;
+    margin-top: 30%;
+    margin-left: 12%;
+    width: 75%;
+    .title{
+      font-size: 30px;
     }
   }
 }
