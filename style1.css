@@ -52,7 +52,7 @@ nav .wrapper{
     background: #3A3B3C;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     nav .wrapper{
         padding: 0px 10px;
         height: 60px;
@@ -112,7 +112,7 @@ p.body_text{
         padding-right: 20%;
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1080px) {
         li{
             padding: 0;
             font-size: small;
@@ -135,7 +135,7 @@ p.body_text{
     font-weight: 700;
     padding-left: 9vw;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1080px) {
     .hiro{
         font-size: medium;
         font-weight: 700;
@@ -181,7 +181,7 @@ td.thead{
     border-top: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     tr.table-row{
         font-size: small;
     }
@@ -252,7 +252,7 @@ footer {
 			}
 		}
 	}
-    @media screen and (max-width: 768px) { 
+    @media screen and (max-width: 1080px) { 
         width: 100%;    
         left: 0%;
         bottom: 0px;
