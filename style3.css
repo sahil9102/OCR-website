@@ -58,7 +58,7 @@ ul.nav-links{
     background: #3A3B3C ;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   nav .wrapper{
     padding: 0px 10px ;
     height: 60px;
@@ -93,7 +93,7 @@ svg.email-sub {
   margin-top: 30vh;
 }
 
-@media screen and (max-width: 1180px){
+@media screen and (max-width: 1080px){
   svg.email-sub{
     display: none;
     margin: 0px;
@@ -253,24 +253,12 @@ form {
   }
 }
 
-@media screen and (max-width: 1180px) and (min-width: 768px){
-  form{
-    float:left;
-    margin-top: 10%;
-    margin-left: 22%;
-    width: 60%;
-    .title{
-      font-size: 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1080px){
   form{
     float:left;
     margin-top: 20%;
-    margin-left: 15%;
-    width: 75%;
+    margin-left: 22%;
+    width: 60%;
     .title{
       font-size: 20px;
     }
